@@ -1,0 +1,616 @@
+/* overall default */
+
+* {
+  font-size: 100%;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* navbar */
+
+.navigation {
+  text-align: center;
+  font-size: 56px;
+  padding: 50px;
+  position: fixed;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255,0));
+  z-index: 1;
+}
+
+.navigation .navibaritem {
+  display: inline;
+  white-space: nowrap;
+  spacing: 50px;
+  text-decoration: none;
+  font-size:70%;
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+.unselected{
+  color: rgba(255, 255, 255, 1);
+}
+
+.selected {
+  color: rgba(255, 165, 0, 1);
+}
+
+/* footer */
+.footeroverall {
+  background: rgba(195, 195, 195, 1);
+  width: 100%;
+  padding: 60px;
+}
+
+.footer_left {
+  width: 40%;
+  float: left;
+  font-size: 15px;
+}
+
+.footer_center {
+  width: 60%;
+  float: left;
+  font-size: 20px;
+}
+
+.footer_center a{
+  padding: 20px;
+}
+
+/* images */
+img {
+  position:relative;
+  display:block;
+  z-index:-1;
+}
+
+.fullscreenimage {
+  width: 100%;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255,0));
+  bottom: 20px;
+}
+
+.icon {
+  height: 50px;
+  width: auto;
+  display: inline-block;
+}
+
+/* plant gallery */
+.gallery {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 350px;
+  height: auto;
+}
+
+.cell {
+  box-sizing: content-box;
+  margin: 10px;
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.cell:hover img {
+  transform: scale(1.2);
+}
+
+/* text on image */
+.textonimage {
+  z-index: 100;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.textonimage .large {
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.textonimage .small {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
+/* content */
+
+.paragrah {
+  font-size: 25px;
+  width: 100%;
+  line-height: 30px;
+  vertical-align: top;
+  padding-top: 100px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+  padding-left: 300px;
+}
+
+.paragrah p{
+  margin-bottom: 80px;
+}
+
+.right_block {
+  text-align: right;
+}
+
+/* table */
+table {
+  width: 100%;
+  table-layout: fixed;
+  padding-top: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+}
+
+.leftcol {
+  width: 70%;
+}
+
+.rightcol {
+  width: 30%;
+}
+
+td {
+  font-size: 24px;
+  white-space: normal;
+  padding: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+th {
+  font-size: 32px;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+/* list */
+ul {
+  white-space: normal;
+  padding-left: 40px;
+}
+
+
+
+/* manage different display media */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navigation {
+    font-size: 20px;
+    padding: 24px;
+  }
+
+  .navigation .navibaritem {
+    spacing: 24px;
+    padding: 1px;
+  }
+
+  .footeroverall {
+    padding: 40px;
+  }
+
+  .footer_left {
+    font-size: 6px;
+  }
+
+  .footer_center {
+    font-size: 8px;
+  }
+
+  .footer_center a{
+    padding: 8px;
+  }
+
+  .fullscreenimage {
+    bottom: 12px;
+  }
+
+  .icon {
+    height: 24px;
+  }
+
+  .gallery {
+    padding: 8px;
+  }
+
+  .gallery img {
+    width: 160px;
+  }
+
+  .cell {
+    margin: 4px;
+    width: 160px;
+  }
+
+  .textonimage {
+    top: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .textonimage .large {
+    font-size: 12px;
+  }
+
+  .textonimage .small {
+    font-size: 10px;
+  }
+
+
+  .paragrah {
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .paragrah p{
+    margin-bottom: 22px;
+  }
+
+  /* table */
+  table {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  td {
+    font-size: 7px;
+    padding: 1px;
+  }
+
+  th {
+    font-size: 12px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    padding-left: 1px;
+  }
+
+  /* list */
+  ul {
+    white-space: normal;
+    padding-left: 18px;
+  }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navigation {
+    font-size: 30px;
+    padding: 28px;
+  }
+
+  .navigation .navibaritem {
+    spacing: 28px;
+    padding: 2px;
+  }
+
+  .footeroverall {
+    padding: 40px;
+  }
+
+  .footer_left {
+    font-size: 10px;
+  }
+
+  .footer_center {
+    font-size: 12px;
+  }
+
+  .footer_center a{
+    padding: 12px;
+  }
+
+  .fullscreenimage {
+    bottom: 12px;
+  }
+
+  .icon {
+    height: 28px;
+  }
+
+  .gallery {
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 200px;
+  }
+
+  .cell {
+    margin: 4px;
+    width: 200px;
+  }
+
+  .textonimage {
+    top: 20%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .textonimage .large {
+    font-size: 26px;
+  }
+
+  .textonimage .small {
+    font-size: 16px;
+  }
+
+
+  .paragrah {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+
+  .paragrah p{
+    margin-bottom: 30px;
+  }
+
+  /* table */
+  table {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  td {
+    font-size: 10px;
+    padding: 1px;
+  }
+
+  th {
+    font-size: 16px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    padding-left: 1px;
+  }
+
+  /* list */
+  ul {
+    white-space: normal;
+    padding-left: 22px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation {
+    font-size: 40px;
+    padding: 32px;
+  }
+
+  .navigation .navibaritem {
+    spacing: 32px;
+    padding: 3px;
+  }
+
+  .footeroverall {
+    padding: 44px;
+  }
+
+  .footer_left {
+    font-size: 10px;
+  }
+
+  .footer_center {
+    font-size: 12px;
+  }
+
+  .footer_center a{
+    padding: 12px;
+  }
+
+  .fullscreenimage {
+    bottom: 12px;
+  }
+
+  .icon {
+    height: 32px;
+  }
+
+  .gallery {
+    padding: 12px;
+  }
+
+  .gallery img {
+    width: 240px;
+  }
+
+  .cell {
+    margin: 6px;
+    width: 240px;
+  }
+
+  .textonimage {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .textonimage .large {
+    font-size: 28px;
+  }
+
+  .textonimage .small {
+    font-size: 18px;
+  }
+
+
+  .paragrah {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+  }
+
+  .paragrah p{
+    margin-bottom: 40px;
+  }
+
+  /* table */
+  table {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+
+  td {
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  th {
+    font-size: 20px;
+    padding-top: 6px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    padding-left: 1px;
+  }
+
+  /* list */
+  ul {
+    white-space: normal;
+    padding-left: 26px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navigation {
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  .navigation .navibaritem {
+    spacing: 40px;
+    padding: 4px;
+  }
+
+  .footeroverall {
+    padding: 50px;
+  }
+
+  .footer_left {
+    font-size: 12px;
+  }
+
+  .footer_center {
+    font-size: 16px;
+  }
+
+  .footer_center a{
+    padding: 16px;
+  }
+
+  .fullscreenimage {
+    bottom: 16px;
+  }
+
+  .icon {
+    height: 40px;
+  }
+
+  .gallery {
+    padding: 16px;
+  }
+
+  .gallery img {
+    width: 300px;
+  }
+
+  .cell {
+    margin: 8px;
+    width: 300px;
+  }
+
+  .textonimage {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .textonimage .large {
+    font-size: 50px;
+  }
+
+  .textonimage .small {
+    font-size: 16px;
+  }
+
+
+  .paragrah {
+    font-size: 22px;
+    line-height: 25px;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+  }
+
+  .paragrah p{
+    margin-bottom: 60px;
+  }
+
+  /* table */
+  table {
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+  }
+
+  td {
+    font-size: 20px;
+    padding: 4px;
+  }
+
+  th {
+    font-size: 26px;
+    padding-top: 12px;
+    padding-right: 4px;
+    padding-bottom: 12px;
+    padding-left: 4px;
+  }
+
+  /* list */
+  ul {
+    white-space: normal;
+    padding-left: 32px;
+  }
+}
